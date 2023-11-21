@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navigation from './component/Home/Navigation/Navigation'
+import Home from './component/Home/Home';
+import Cart from './component/cart/cart'
+import { BrowserRouter,Routes,Route, Outlet } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Navigation/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+      </Routes>
+    </BrowserRouter>
+    <Outlet/>
+    <div style={{height:'200px'}}></div>
+
+   </>
   );
 }
 
 export default App;
+
+// Main objective is implementation not designing

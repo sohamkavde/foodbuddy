@@ -1,0 +1,27 @@
+.changeproperty>div>div{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.changeproperty>div>div>img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50%;
+    height: 100px;
+
+}
+.carousel-control-next, .carousel-control-prev{
+    position:static;
+    width: 47px;
+}
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: #000 !important;
+    text-decoration: none;
+    outline: 0;
+    /* opacity: .9; */
+}
+#iconRun{
+    color: black !important;
+    background-color: brown;
+}

@@ -1,0 +1,18 @@
+Redux use:
+    I created a variable "sk" in component 1 
+    and I want to use value of variable "sk" in component 2
+    -Catch is here : both component present in same page to make intraction I am using redux not as a data storage(database).
+    Question 1 SO cann't I use variable sk value in other page?
+    Answer is : yes I can use variable sk value in other page as well because it works as global state management tool. So I can say it works somewhere like temprory data storage.
+    The storage will have value until the application is open, as we close the browser/says application then in storage, updated value will change to initial state of the storage/variable. 
+
+    Where to use : use for temprory work like I mention above.Example: changing state of variable in one component and want to show it's result in other componenet(nested/independent).
+    Or simply I can say to show user events I can use redux.That's all.
+    So Not To Use: I understand if I want to make state's updated data available than i need to store it in permanent storage like localStorage/db(server).
+
+
+Home page:
+    1. Add button on product gallary
+        -click: store id of product in localStorage.
+    2. Create page where I can increase/decrease frequency of the products.
+        - Onchange(frequency) : use redux to update frequency as well as total amount.
